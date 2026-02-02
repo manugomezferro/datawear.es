@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuitLab | Digital Fashion Exhibition</title>
+    <meta name="description" content="SuitLab - Exposición de moda digital en Coruña. Desarrollado por Laura Bravo.">
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Unbounded:wght@300;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Loading Overlay -->
+    <div id="loader" class="loader">
+        <div class="loader-text">SUITLAB</div>
+    </div>
+
+    <!-- Main Container (Smooth Scroll Wrapper) -->
+    <main id="viewport">
+        <!-- Scroll Container for Horizontal/Vertical Logic -->
+        <div id="content" class="content-container">
+
+            <!-- Navbar -->
+            <nav class="navbar">
+                <div class="nav-logo">SUITLAB</div>
+                <div class="nav-links">
+                    <a href="#about">Manifiesto</a>
+                    <a href="#designers">Diseñadores</a>
+                    <a href="#shop">Shop</a>
+                </div>
+            </nav>
+
+            <!-- SECTIONS -->
+
+            <!-- SECTION 1: HERO -->
+            <section id="hero" class="panel hero-section">
+                <div class="video-bg-placeholder">
+                    <!-- Simulating Video with Image for now -->
+                     <img src="assets/images/hero-bg.png" alt="Digital Runway" style="width:100%; height:100%; object-fit:cover; opacity:0.8;">
+                    <div class="overlay-text" style="position:absolute; z-index:2;">VIDEO LOOP</div>
+                </div>
+                <div class="hero-content">
+                    <h1>SuitLab</h1>
+                    <p class="subtitle">The Future of Digital Fashion</p>
+                    <p class="date">Coruña 2026</p>
+                </div>
+            </section>
+
+            <!-- SECTION 2: MANIFESTO (ABOUT) -->
+            <section id="about" class="panel text-section">
+                <div class="content-wrapper">
+                    <h2>Manifiesto</h2>
+                    <p class="lead-text">La moda digital no es solo ropa. Es código, física y arte sin límites.</p>
+                    <div class="text-block">
+                        <p>SuitLab nace para explorar la intersección entre la identidad virtual y el diseño de alta costura. Sin telas, sin residuos, solo pura creatividad renderizada en tiempo real. Bienvenidos a la nueva era de la expresión.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3: DESIGNERS -->
+            <section id="designers" class="panel designers-section">
+                <div class="content-wrapper">
+                    <h2>Diseñadores</h2>
+                    <div class="designers-grid">
+                        <div class="designer-card">
+                            <div class="d-img">
+                                <img src="assets/images/designer-elena.png" alt="Elena V." style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <h3>Elena V.</h3>
+                            <p>Cyber-couture</p>
+                        </div>
+                        <div class="designer-card">
+                            <div class="d-img">
+                                <img src="assets/images/designer-nexus.png" alt="Nexus Studio" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <h3>Nexus Studio</h3>
+                            <p>Avatar Skins</p>
+                        </div>
+                        <div class="designer-card">
+                            <div class="d-img">
+                                <img src="assets/images/designer-zero.png" alt="ZeroGravity" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <h3>ZeroGravity</h3>
+                            <p>Gravity-defying fabrics</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 4: SHOP -->
+            <section id="shop" class="panel shop-section">
+                <div class="content-wrapper">
+                    <h2>Shop Collection</h2>
+                    <div class="shop-grid">
+                        <div class="shop-item">
+                            <div class="item-preview">
+                                <img src="assets/images/neon-jacket.png" alt="Neon Jacket" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <div class="item-info">
+                                <h3>Neon Jacket</h3>
+                                <p>0.5 ETH</p>
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <div class="item-preview">
+                                <img src="assets/images/void-dress.png" alt="Void Dress" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <div class="item-info">
+                                <h3>Void Dress</h3>
+                                <p>0.8 ETH</p>
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                        <div class="shop-item">
+                            <div class="item-preview">
+                                <img src="assets/images/holo-sneakers.png" alt="Holo Sneakers" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <div class="item-info">
+                                <h3>Holo-Sneakers</h3>
+                                <p>0.2 ETH</p>
+                                <button>Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
